@@ -6,7 +6,7 @@
 <title>Lavadero — Precios y turnos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -26,6 +26,25 @@
     <section class="grid" id="servicios-grid" aria-live="polite">
       <!-- Las tarjetas se generan con script.js a partir de precios.json -->
     </section>
+
+    <section class="map-section">
+      <h2>Cómo llegar</h2>
+      <div class="map-embed">
+        <iframe
+          id="map-iframe"
+          src=""
+          width="100%"
+          height="100%"
+          style="border:0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación del lavadero en Google Maps">
+        </iframe>
+      </div>
+      <a id="map-link" class="map-cta" href="#" target="_blank" rel="noopener noreferrer">
+        Abrir en Google Maps
+      </a>
+    </section>
   </main>
 
   <footer>
@@ -33,6 +52,6 @@
     <p id="footer-actualizado"></p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>

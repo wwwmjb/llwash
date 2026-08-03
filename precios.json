@@ -1,9 +1,10 @@
 {
   "negocio": {
     "nombre": "Lavadero El Brillo",
-    "direccion": "Av. Siempre Viva 1234, Quilmes",
+    "direccion": "Av. Caseros 262, B1879 Bernal, Provincia de Buenos Aires",
     "horario": "Lun a Sáb de 9 a 19 hs",
-    "whatsapp": "5491100000000"
+    "whatsapp": "5491100000000",
+    "google_maps_url": "https://maps.app.goo.gl/KaTU6nUxYe63aNmB7"
   },
   "reserva_url_default": "https://calendar.app.google/REEMPLAZAR-CON-TU-LINK",
   "moneda": "$",

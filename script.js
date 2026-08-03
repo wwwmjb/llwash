@@ -79,6 +79,19 @@ async function init() {
   document.getElementById('direccion').textContent = data.negocio?.direccion || '';
   document.getElementById('horario').textContent = data.negocio?.horario || '';
 
+  // --- Mapa de ubicación ---
+  const direccion = data.negocio?.direccion || '';
+  const mapaLinkPropio = data.negocio?.google_maps_url; // link corto tipo maps.app.goo.gl (opcional)
+  const mapIframe = document.getElementById('map-iframe');
+  const mapLink = document.getElementById('map-link');
+
+  if (mapIframe && direccion) {
+    mapIframe.src = `https://www.google.com/maps?q=${encodeURIComponent(direccion)}&output=embed`;
+  }
+  if (mapLink) {
+    mapLink.href = mapaLinkPropio || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(direccion)}`;
+  }
+
   const actualizado = document.getElementById('footer-actualizado');
   if (data.actualizado) {
     actualizado.textContent = `Precios actualizados el ${data.actualizado}`;
