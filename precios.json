@@ -1,6 +1,6 @@
 {
   "negocio": {
-    "nombre": "Lavadero El Brillo",
+    "nombre": "Lavadero LL Wash 'al detalle'",
     "direccion": "Av. Caseros 262, B1879 Bernal, Provincia de Buenos Aires",
     "horario": "Lun a Sáb de 9 a 19 hs",
     "whatsapp": "5491100000000",
@@ -28,7 +28,7 @@
     },
     {
       "id": "premium",
-      "nombre": "Premium + Encerado",
+      "nombre": "Premium",
       "precio": 18000,
       "duracion": "50 min",
       "descripcion": "Lavado completo + encerado y brillo de llantas.",
