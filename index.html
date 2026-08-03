@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lavadero — Precios y turnos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow" id="horario">Cargando horario…</p>
+      <h1 id="nombre-negocio">Lavadero</h1>
+      <p class="hero-sub" id="direccion">Cargando dirección…</p>
+    </div>
+    <svg class="suds" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,30 Q50,60 100,30 T200,30 T300,30 T400,30 T500,30 T600,30 T700,30 T800,30 T900,30 T1000,30 T1100,30 T1200,30 V60 H0 Z"></path>
+    </svg>
+  </header>
+
+  <main>
+    <p class="section-label">Tocá un servicio para reservar tu turno</p>
+    <section class="grid" id="servicios-grid" aria-live="polite">
+      <!-- Las tarjetas se generan con script.js a partir de precios.json -->
+    </section>
+  </main>
+
+  <footer>
+    <p id="footer-nota">Los precios pueden variar sin previo aviso.</p>
+    <p id="footer-actualizado"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

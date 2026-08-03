@@ -1,0 +1,45 @@
+{
+  "negocio": {
+    "nombre": "Lavadero El Brillo",
+    "direccion": "Av. Siempre Viva 1234, Quilmes",
+    "horario": "Lun a Sáb de 9 a 19 hs",
+    "whatsapp": "5491100000000"
+  },
+  "reserva_url_default": "https://calendar.app.google/REEMPLAZAR-CON-TU-LINK",
+  "moneda": "$",
+  "actualizado": "2026-08-03",
+  "servicios": [
+    {
+      "id": "exterior",
+      "nombre": "Lavado Exterior",
+      "precio": 8000,
+      "duracion": "20 min",
+      "descripcion": "Carrocería, llantas y vidrios.",
+      "imagen": "images/exterior.svg"
+    },
+    {
+      "id": "completo",
+      "nombre": "Lavado Completo",
+      "precio": 12000,
+      "duracion": "35 min",
+      "descripcion": "Exterior + interior aspirado y tablero.",
+      "imagen": "images/completo.svg"
+    },
+    {
+      "id": "premium",
+      "nombre": "Premium + Encerado",
+      "precio": 18000,
+      "duracion": "50 min",
+      "descripcion": "Lavado completo + encerado y brillo de llantas.",
+      "imagen": "images/premium.svg"
+    },
+    {
+      "id": "interior",
+      "nombre": "Tapizados a Fondo",
+      "precio": 15000,
+      "duracion": "45 min",
+      "descripcion": "Lavado profundo de asientos y alfombras.",
+      "imagen": "images/interior.svg"
+    }
+  ]
+}
