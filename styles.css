@@ -232,6 +232,63 @@ main {
   filter: brightness(0.95);
 }
 
+/* ---------- Botones flotantes (WhatsApp / Instagram) ---------- */
+.floating-social {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 100;
+}
+
+.social-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(11, 31, 51, 0.28);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.social-btn svg {
+  width: 26px;
+  height: 26px;
+}
+
+.social-btn:hover,
+.social-btn:focus-visible {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(11, 31, 51, 0.34);
+  outline: none;
+}
+
+.social-btn.whatsapp {
+  background: #25D366;
+}
+
+.social-btn.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+@media (max-width: 480px) {
+  .floating-social {
+    right: 14px;
+    bottom: 14px;
+  }
+  .social-btn {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-btn { transition: none; }
+}
+
 /* ---------- Footer ---------- */
 footer {
   text-align: center;

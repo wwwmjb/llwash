@@ -92,6 +92,16 @@ async function init() {
     mapLink.href = mapaLinkPropio || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(direccion)}`;
   }
 
+  // --- Botones flotantes de contacto ---
+  const waLink = document.getElementById('whatsapp-link');
+  const igLink = document.getElementById('instagram-link');
+  if (waLink && data.negocio?.whatsapp) {
+    waLink.href = `https://wa.me/${data.negocio.whatsapp}`;
+  }
+  if (igLink && data.negocio?.instagram_url) {
+    igLink.href = data.negocio.instagram_url;
+  }
+
   const actualizado = document.getElementById('footer-actualizado');
   if (data.actualizado) {
     actualizado.textContent = `Precios actualizados el ${data.actualizado}`;

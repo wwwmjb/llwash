@@ -1,9 +1,10 @@
 {
   "negocio": {
     "nombre": "Lavadero LL Wash",
-    "direccion": "Av. Caseros 262, Bernal, Provincia de Buenos Aires",
+    "direccion": "Av. Caseros 262, B1879 Bernal, Provincia de Buenos Aires",
     "horario": "Lun a Sáb de 9 a 19 hs",
-    "whatsapp": "5491100000000",
+    "whatsapp": "5491169993210",
+    "instagram_url": "https://www.instagram.com/llwash.aldetalle/",
     "google_maps_url": "https://maps.app.goo.gl/KaTU6nUxYe63aNmB7"
   },
   "reserva_url_default": "https://calendar.app.google/REEMPLAZAR-CON-TU-LINK",
@@ -28,7 +29,7 @@
     },
     {
       "id": "premium",
-      "nombre": "Premium",
+      "nombre": "Premium + Encerado",
       "precio": 18000,
       "duracion": "50 min",
       "descripcion": "Lavado completo + encerado y brillo de llantas.",
